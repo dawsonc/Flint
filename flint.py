@@ -7,8 +7,8 @@ import re
 
 class Flint:
 
-	def __init__(self, path_to_file):
-		with open(path_to_file, "r") as file:
+	def __init__(self, path_to_template):
+		with open(path_to_template, "r") as file:
 			self.text = file.read()
 		self.vals = {}
 		self.html = None
