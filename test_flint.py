@@ -54,6 +54,14 @@ class TestFelt:
 		flint.render()
 		assert flint.getHTML() == "<p>hello, {world}</p>"
 
+	def test_multiple_keys_in_template(self):
+		flint = Flint("test_resources/test_multiple_keys_in_template.md")
+		flint.add_dict({"key1": "hello",
+						"list": [1]})
+		flint.render()
+		correctHTML = "<p>hello hello</p>\n<ul>\n<li>1 1</li>\n</ul>"
+		assert flint.getHTML() == correctHTML
+
 	def test_edge_cases(self):
 		flint = Flint("test_resources/test_edge_cases.md")
 		dict = {"int_value_key": 1,
