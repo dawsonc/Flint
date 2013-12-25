@@ -1,6 +1,6 @@
 from flint import Flint
 
-class TestFelt:
+class TestFlint:
 
 	def test_empty_file(self):
 		flint = Flint("test_resources/test_empty_file.md")
