@@ -9,6 +9,10 @@ What?
 
 Flint is a python engine for generating dynamic webpages from [Markdown](http://daringfireball.net/projects/markdown/) templates.
 
+Installation
+------------
+
+`pip install flint-md`
 
 How?
 ----

@@ -1,14 +1,17 @@
-from distutils.core import setup
+from setuptools import setup
 
-setup(name='flint',
-	  version='1.0',
+setup(name='flint-md',
+	  version='1.0.5',
 	  description='Dynamic Markdown Templating',
-	  long_description=open("README.md").read(),
 	  author='Charles Dawson',
 	  author_email='charles.dwsn@gmail.com',
 	  url='http://cdawson.net/flint',
 	  download_url='http://github.com/TheBritKnight/Flint',
-	  require='markdown',
+	  install_requires=['markdown >= 2.3.1'],
 	  py_modules=['flint'],
-	  classifiers=['License :: OSI Approved :: MIT License']
+	  license="MIT License",
+	  classifiers=[
+	  	'License :: OSI Approved :: MIT License',
+	  	'Programming Language :: Python',
+	  	'Operating System :: OS Independent']
 	  )
