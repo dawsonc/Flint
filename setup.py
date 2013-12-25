@@ -32,5 +32,7 @@ setup(name='flint-md',
 	  	'Programming Language :: Python :: 3',
 	  	'Operating System :: OS Independent',
 	  	'Topic :: Text Processing :: Markup',
-	  	'Topic :: Internet :: WWW/HTTP :: Dynamic Content']
+	  	'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+	  	'Intended Audience :: Developers',
+	  	'Environment :: Web Environment']
 	  )
