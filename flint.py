@@ -42,7 +42,7 @@ class Flint:
 																replacement)
 
 		# Render the values
-		for key, value in self.vals.iteritems():
+		for key, value in self.vals.items():
 			if str(key) in self.text:
 				flint_string = "{" + str(key) + "}"
 				self.rendered_text = self.rendered_text.replace(flint_string,
