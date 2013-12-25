@@ -20,7 +20,7 @@ class Flint:
 		self.vals.update(dict)
 
 	def get(self, key):
-		if self.vals.contains(key):
+		if key in self.vals:
 			return self.vals[key]
 
 	def render(self):

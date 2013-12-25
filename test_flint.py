@@ -2,6 +2,43 @@ from flint import Flint
 
 class TestFlint:
 
+	def test_init(self):
+		flint = Flint("test_resources/general_test.md")
+		assert flint.text == open("test_resources/general_test.md").read()
+		assert flint.vals == {}
+		assert flint.html == None
+
+	def test_get(self):
+		flint = Flint("test_resources/general_test.md")
+		flint.add("hello", "hi")
+		assert flint.get("hello") == "hi"
+
+	def test_get_text(self):
+		flint = Flint("test_resources/general_test.md")
+		assert flint.getText() == "{key1}, {key2}"
+
+	def test_export_text(self):
+		flint = Flint("test_resources/general_test.md")
+		flint.exportText("test_resources/general_test_exported.md")
+		with open("test_resources/general_test_exported.md") as f:
+			assert f.read() == "{key1}, {key2}"
+
+	def test_get_rendered_text(self):
+		flint = Flint("test_resources/general_test.md")
+		flint.add_dict({"key1": "hello", "key2": "world"})
+		flint.render()
+		assert flint.getRenderedText() == "hello, world"
+
+	def test_export_rendered_text(self):
+		flint = Flint("test_resources/general_test.md")
+		flint.add_dict({"key1": "hello", "key2": "world"})
+		flint.render()
+		flint.exportRenderedText("test_resources/general_test_rendered.md")
+		with open("test_resources/general_test_rendered.md") as f:
+			assert f.read() == "hello, world"
+
+	""" Tests for flint.render() """
+
 	def test_empty_file(self):
 		flint = Flint("test_resources/test_empty_file.md")
 		flint.add("key", "value")
