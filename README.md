@@ -70,4 +70,4 @@ This will produce the following HTML:
 
 For more examples, see the examples folder.
 
-More information on [my blog](http://www.cdawson.net/LINK)
+More information on [my blog](http://www.cdawson.net/flint)
