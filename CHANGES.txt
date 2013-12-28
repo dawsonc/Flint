@@ -5,3 +5,4 @@ v1.0.3, 12/24/2013 -- Distribution bugfixes
 v1.0.4, 12/24/2013 -- Distribution bugfixes
 v1.0.5, 12/24/2013 -- Distribution bugfixes
 v1.1.0, 12/24/2013 -- Refactored for Python 3 compatibility, added setup.py test functionality
+v1.1.1, 12/24/2013 -- Updated README.md

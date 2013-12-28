@@ -15,7 +15,7 @@ class PyTest(TestCommand):
         sys.exit(errno)
 
 setup(name='flint-md',
-	  version='1.1.0',
+	  version='1.1.1',
 	  description='Dynamic Markdown Templating',
 	  author='Charles Dawson',
 	  author_email='charles.dwsn@gmail.com',
